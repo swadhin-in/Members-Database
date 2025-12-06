@@ -135,8 +135,8 @@ def main():
 
                     # Col 2: Details
                     with col2:
-                        st.header(f"{row['name']}")
-                        st.subheader(f"**{row['domain']}**")
+                        st.subheader(f"{row['name']}")
+                        st.text(f"{row['domain']}")
                         
 
                     # Col 3: QR Code
@@ -225,6 +225,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
