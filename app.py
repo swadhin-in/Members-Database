@@ -140,7 +140,7 @@ def main():
                         st.text(f"📧 {row['email']}")
                         st.text(f"📞 {row['phone']}")
                         if row['linkedin']:
-                            st.markdown(f"🔗 [LinkedIn Profile]({row['linkedin']})"
+                            st.markdown(f"🔗 [LinkedIn Profile]({row['linkedin']})")
 
                     # Col 3: QR Code
                     with col3:
@@ -228,6 +228,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
