@@ -86,7 +86,7 @@ def generate_qr(data):
 
 # --- MAIN APP ---
 def main():
-    st.set_page_config(page_title="Employee Directory", layout="wide")
+    st.set_page_config(page_title="SuperX-Members", layout="wide")
     
     # Initialize DB on load
     init_db()
@@ -98,7 +98,7 @@ def main():
 
     # --- PUBLIC VIEW (Read Only) ---
     if menu == "Public View":
-        st.header("Employee Directory")
+        st.header("Member Directory")
         
         df = get_all_employees()
         
@@ -106,7 +106,7 @@ def main():
             st.info("No employees found in the database. Please ask an Admin to add records.")
         else:
             # Search bar
-            search = st.text_input("🔍 Search by Name or Domain", placeholder="e.g. John or Marketing")
+            search = st.text_input("🔍 Search by Name or Domain", placeholder="e.g. Name or Domain")
             
             # Filter logic
             if search:
@@ -228,3 +228,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
