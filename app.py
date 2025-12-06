@@ -91,7 +91,7 @@ def main():
     # Initialize DB on load
     init_db()
 
-    st.title("🏢 SuperX Members")
+    st.title("SuperX Members")
 
     # Sidebar for Navigation
     menu = st.sidebar.selectbox("Menu", ["Public View", "Admin Portal"])
@@ -135,8 +135,8 @@ def main():
 
                     # Col 2: Details
                     with col2:
-                        st.subheader(f"{row['name']}")
-                        st.caption(f"**{row['domain']}**")
+                        st.header(f"{row['name']}")
+                        st.subheader(f"**{row['domain']}**")
                         
 
                     # Col 3: QR Code
@@ -225,6 +225,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
