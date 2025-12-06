@@ -91,7 +91,7 @@ def main():
     # Initialize DB on load
     init_db()
 
-    st.title("🏢 Corporate Employee Database")
+    st.title("🏢 SuperX Members Database")
 
     # Sidebar for Navigation
     menu = st.sidebar.selectbox("Menu", ["Public View", "Admin Portal"])
@@ -226,4 +226,5 @@ def main():
             st.info("Please enter the password in the sidebar to access admin features.")
 
 if __name__ == "__main__":
+
     main()
